@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>862</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(197, 197, 197);
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="widget">
+      <attribute name="title">
+       <string>控制台</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="2" column="3" colspan="3">
+          <widget class="QPushButton" name="link_button">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+           </property>
+           <property name="text">
+            <string>连接</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>地址：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>当前气压：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>监控</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>当前深度：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="temp_label">
+           <property name="styleSheet">
+            <string notr="true">    font-size: 18px;  /* 字体大小 */
+    color: black;  /* 文字颜色 */
+    text-align: center;
+    margin: 5px;  /* 外边距 */
+    color: #333;  /* 文字颜色 */
+    background-color: #e0e0e0;  /* 背景颜色 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+  max-width: 200px;
+    margin: 5px;  /* 外边距 */</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="depth_label">
+           <property name="styleSheet">
+            <string notr="true">    font-size: 18px;  /* 字体大小 */
+    color: black;  /* 文字颜色 */
+    text-align: center;
+    margin: 5px;  /* 外边距 */
+    color: #333;  /* 文字颜色 */
+    background-color: #e0e0e0;  /* 背景颜色 */
+    padding: 10px;  /* 内边距 */
+max-width: 200px;
+    border-radius: 5px;  /* 圆角 */
+    margin: 5px;  /* 外边距 */</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="6">
+          <widget class="QTextEdit" name="log_display">
+           <property name="styleSheet">
+            <string notr="true">QTextEdit {
+    text-align: center;
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */
+    background-color: #f9f9f9;  /* 背景颜色 */
+    border: 1px solid #ccc;  /* 边框 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+    margin: 5px;  /* 外边距 */
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3" colspan="3">
+          <widget class="QLineEdit" name="port">
+           <property name="styleSheet">
+            <string notr="true">    font-size: 18px;  /* 字体大小 */
+    color: black;  /* 文字颜色 */
+    text-align: center;
+    margin: 5px;  /* 外边距 */
+    color: #333;  /* 文字颜色 */
+    background-color: #e0e0e0;  /* 背景颜色 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+    margin: 5px;  /* 外边距 */</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>当前温度：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="pressure_label">
+           <property name="styleSheet">
+            <string notr="true">    font-size: 18px;  /* 字体大小 */
+    color: black;  /* 文字颜色 */
+    text-align: center;
+    margin: 5px;  /* 外边距 */
+    color: #333;  /* 文字颜色 */
+    background-color: #e0e0e0;  /* 背景颜色 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+  max-width: 200px;
+    margin: 5px;  /* 外边距 */</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="6">
+          <widget class="QPushButton" name="submit_data_button">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+           </property>
+           <property name="text">
+            <string>保存数据</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>端口：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3" colspan="3">
+          <widget class="QLineEdit" name="broker">
+           <property name="styleSheet">
+            <string notr="true">    font-size: 18px;  /* 字体大小 */
+    color: black;  /* 文字颜色 */
+    text-align: center;
+    margin: 5px;  /* 外边距 */
+    color: #333;  /* 文字颜色 */
+    background-color: #e0e0e0;  /* 背景颜色 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+    margin: 5px;  /* 外边距 */</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */</string>
+           </property>
+           <property name="text">
+            <string>控制：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="left_button">
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+           </property>
+           <property name="text">
+            <string>A</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="QPushButton" name="backward_button">
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+           </property>
+           <property name="text">
+            <string>S</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QPushButton" name="forward_button">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+           </property>
+           <property name="text">
+            <string>W</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="QPushButton" name="right_button">
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+           </property>
+           <property name="text">
+            <string>D</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>日志</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>1</y>
+         <width>791</width>
+         <height>581</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0" colspan="2">
+         <widget class="QTextEdit" name="db_log_display">
+          <property name="styleSheet">
+           <string notr="true">QTextEdit {
+    text-align: center;
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */
+    background-color: #f9f9f9;  /* 背景颜色 */
+    border: 1px solid #ccc;  /* 边框 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+    margin: 5px;  /* 外边距 */
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="refresh_log_button">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+          </property>
+          <property name="text">
+           <string>刷新</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>保存的数据</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>791</width>
+         <height>581</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="db_save_display">
+          <property name="styleSheet">
+           <string notr="true">QTextEdit {
+    text-align: center;
+    font-size: 16px;  /* 字体大小 */
+    color: #333;  /* 文字颜色 */
+    background-color: #f9f9f9;  /* 背景颜色 */
+    border: 1px solid #ccc;  /* 边框 */
+    padding: 10px;  /* 内边距 */
+    border-radius: 5px;  /* 圆角 */
+    margin: 5px;  /* 外边距 */
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="refresh_save_button">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: gray;
+    color: white;  /* 白色文字 */
+    border: none;  /* 无边框 */
+    padding: 10px 20px;  /* 内边距 */
+    text-align: center;  /* 文字居中 */
+    font-size: 16px;  /* 字体大小 */
+    margin: 4px 2px;  /* 外边距 */
+    border-radius: 12px;  /* 圆角 */
+}
+
+QPushButton:hover {
+    background-color: white;  /* 鼠标悬停时背景变为白色 */
+    color: black;  /* 鼠标悬停时文字变为黑色 */
+    border: 2px solid black;  /* 鼠标悬停时边框 */
+}</string>
+          </property>
+          <property name="text">
+           <string>刷新</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
