@@ -59,7 +59,7 @@ port = 1883
 在项目根目录下运行以下命令启动程序：
 
 ```bash
-python <文件名>.py
+python mqtt_upper.py
 ```
 
 > **注意**：运行前确保 MQTT 代理正在运行，且 `styles` 文件夹下的样式文件已配置完成。
