@@ -43,3 +43,44 @@ QTextEdit {
     margin: 5px;  /* 外边距 */
 }
 """
+
+tabs_style = """
+    QTabWidget::pane { 
+        /* Tab widget frame with soft shadow effect */
+        border-top: 2px solid #C2C7CB;
+        position: absolute;
+        top: -0.5em;
+        background: #FFFFFF; /* Pure white for a clean look */
+        border-radius: 6px; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+    QTabWidget::tab-bar {
+        alignment: center; /* Center align tab bar */
+    }
+    QTabBar::tab {
+        height: 20px; /* Tab height */
+        background: #F5F7FA; /* Light gray for tabs */
+        border: 1px solid #E0E0E0; /* Subtle border */
+        border-bottom: none; /* Seamless integration with pane */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        min-width: 80px; /* Wider tabs for modern UI */
+        padding: 8px 12px; /* Increase padding for better touch targets */
+        color: #4A4A4A; /* Neutral text color */
+        font-size: 14px; /* Slightly larger font size for readability */
+    }
+    QTabBar::tab:selected {
+        background: #FFFFFF; /* Highlight selected tab */
+        border-color: #C2C7CB;
+        color: #000000; /* Darker text for the active tab */
+        font-weight: bold; /* Emphasize selected tab */
+    }
+    QTabBar::tab:hover {
+        background: #F0F0F0; /* Hover effect */
+        color: #333333; /* Slightly darker text on hover */
+    }
+    QTabBar::tab:disabled {
+        background: #EDEDED; /* Disabled tab appearance */
+        color: #A0A0A0; /* Muted text color */
+    }
+"""

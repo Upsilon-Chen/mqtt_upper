@@ -5,7 +5,7 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 import paho.mqtt.client as mqtt
 import threading
 import sqlite3
-from styles.styles import button_style, label_style, log_display_style
+from styles.styles import button_style, label_style, log_display_style ,tabs_style
 
 # MQTT Broker 设置
 broker = "localhost"
@@ -59,6 +59,8 @@ class UpperComputer(QtWidgets.QWidget):
         self.tabs.addTab(self.control_tab, "控制")
         self.tabs.addTab(self.log_tab, "日志")
         self.tabs.addTab(self.save_tab, "保存的数据")
+
+        self.tabs.setStyleSheet(tabs_style)
 
         # 控制选项卡布局
         control_layout = QtWidgets.QVBoxLayout(self.control_tab)
