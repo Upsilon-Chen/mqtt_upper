@@ -173,6 +173,7 @@ class UpperComputer(QtWidgets.QWidget):
         return temp, pressure, depth
 
     # 更新界面上的传感器数据
+    # dsadsadsad
     @QtCore.pyqtSlot(str, str, str)
     def update_sensor_labels(self, temp, pressure, depth):
         self.temp_label.setText(f"温度: {temp} °C")
