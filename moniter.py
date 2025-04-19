@@ -193,6 +193,7 @@ class UpperComputer(QtWidgets.QWidget):
             self.log_control(direction)
 
     # 初始化数据库
+    # dwafasfwafhuwaifhwaif
     def initDatabase(self):
         self.conn = sqlite3.connect(db_file)
         self.cursor = self.conn.cursor()
